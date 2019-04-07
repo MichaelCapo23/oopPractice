@@ -38,10 +38,14 @@ class Nav {
         att.value = `${link.to}`;
         newLinkA[0].setAttributeNode(att);
         newLinkLi.append(newLinkA);
+        // newLinkLi.onclick = () => {
+        //
+        // }
         newLinkLi.appendTo($(".navContainer"));
     }
 
     createLinks() {
+        debugger;
         let auth = false;
         if(auth) {
             let links = this.commonLinks.concat(this.authLinks);
